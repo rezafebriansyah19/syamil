@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Ummi Aqiqah | Paket Aqiqah Terpercaya & Syar'i</title>
+  <!-- Font Awesome 6 (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefcf5;
+      color: #2e241b;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* header */
+    header {
+      background: white;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 14px 0;
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #7b4e2d;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #b28b6b;
+      display: block;
+      margin-top: -6px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #4e3a2b;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #b56f3a;
+    }
+
+    .wa-header {
+      background: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 8px 14px rgba(37, 211, 102, 0.2);
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .wa-header i {
+      font-size: 1.3rem;
+    }
+    .wa-header:hover {
+      background: #1eb158;
+      transform: scale(1.02);
+    }
+
+    /* hero */
+    .hero {
+      padding: 70px 0 60px;
+      background: linear-gradient(145deg, #fff9f0 0%, #fff3e6 100%);
+      border-bottom: 2px dashed #e6cfbc;
+    }
+
+    .hero-grid {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1 1 380px;
+    }
+    .hero-badge {
+      background: #f7e0d2;
+      color: #6e3f1c;
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
+    }
+    .hero-text h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #402a1b;
+      margin-bottom: 22px;
+    }
+    .hero-highlight {
+      color: #b56f3a;
+      border-bottom: 3px solid #eacbb6;
+    }
+    .hero-desc {
+      font-size: 1.15rem;
+      color: #5e4636;
+      margin-bottom: 32px;
+      max-width: 520px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+      margin-bottom: 28px;
+    }
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #7b4e2d;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: #7a6858;
+    }
+
+    .btn-primary {
+      background: #b56f3a;
+      color: white;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 12px 18px -8px rgba(181, 111, 58, 0.3);
+      transition: all 0.2s;
+      border: none;
+      font-size: 1.05rem;
+    }
+    .btn-primary i {
+      font-size: 1.2rem;
+    }
+    .btn-primary:hover {
+      background: #9b5a2e;
+      transform: translateY(-3px);
+      box-shadow: 0 18px 24px -8px rgba(156, 90, 42, 0.35);
+    }
+
+    .hero-image {
+      flex: 1 1 360px;
+      text-align: center;
+    }
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 48% 52% 32% 68% / 58% 46% 54% 42%;
+      box-shadow: 0 25px 40px -12px rgba(80, 40, 10, 0.25);
+      border: 5px solid #fff6ec;
+      background: #fbead9;
+    }
+
+    /* section umum */
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .section-title h3 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #402a1b;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title h3:after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 4px;
+      background: #dbb594;
+      margin: 12px auto 0;
+      border-radius: 10px;
+    }
+    .section-sub {
+      color: #7f624b;
+      max-width: 600px;
+      margin: 10px auto 0;
+    }
+
+    /* paket cards */
+    .paket-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 28px;
+    }
+
+    .paket-card {
+      background: white;
+      border-radius: 28px;
+      padding: 30px 24px 32px;
+      box-shadow: 0 16px 30px -6px rgba(60, 30, 10, 0.06);
+      transition: all 0.25s;
+      border: 1px solid #f0e1d4;
+      text-align: center;
+    }
+    .paket-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 28px 40px -10px rgba(140, 80, 30, 0.12);
+      border-color: #dbb594;
+    }
+    .paket-icon {
+      font-size: 3.2rem;
+      color: #b56f3a;
+      margin-bottom: 16px;
+    }
+    .paket-card h4 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2e241b;
+    }
+    .paket-harga {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #7b4e2d;
+      margin: 16px 0 8px;
+    }
+    .paket-harga small {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #8e7a6a;
+    }
+    .fitur-list {
+      list-style: none;
+      margin: 24px 0 28px;
+      text-align: left;
+    }
+    .fitur-list li {
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px dashed #eeddcd;
+    }
+    .fitur-list i {
+      color: #2d9c5e;
+      width: 20px;
+    }
+    .btn-paket {
+      background: transparent;
+      border: 2px solid #b56f3a;
+      color: #b56f3a;
+      padding: 12px 22px;
+      border-radius: 40px;
+      font-weight: 600;
+      width: 100%;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.2s;
+    }
+    .btn-paket:hover {
+      background: #b56f3a;
+      color: white;
+    }
+
+    /* kenapa kami */
+    .keunggulan-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+    .unggul-item {
+      background: #ffffffdb;
+      backdrop-filter: blur(2px);
+      padding: 30px 20px;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: 0 6px 14px #eee6de;
+    }
+    .unggul-item i {
+      font-size: 2.6rem;
+      color: #b56f3a;
+      margin-bottom: 20px;
+    }
+    .unggul-item h5 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    /* galeri singkat */
+    .galeri-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .galeri-item {
+      width: 160px;
+      height: 160px;
+      background: #eddaca;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7b5a43;
+      font-size: 2rem;
+      box-shadow: 0 8px 10px rgba(0,0,0,0.02);
+      border: 2px solid white;
+      transition: 0.2s;
+    }
+    .galeri-item i {
+      font-size: 3.2rem;
+      opacity: 0.8;
+    }
+    .galeri-item span {
+      display: block;
+      font-size: 0.9rem;
+      margin-top: 6px;
+    }
+
+    /* kontak & cta */
+    .cta-box {
+      background: #f7ede3;
+      border-radius: 48px;
+      padding: 50px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .cta-left h4 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2e1f13;
+    }
+    .wa-big {
+      background: #25d366;
+      color: white;
+      padding: 18px 40px;
+      border-radius: 60px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      box-shadow: 0 12px 24px #25d36655;
+    }
+    .wa-big i {
+      font-size: 2rem;
+    }
+
+    /* footer */
+    footer {
+      background: #261b13;
+      color: #ddd2c7;
+      padding: 40px 0 25px;
+    }
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    .footer-about h2 {
+      color: #f0dac8;
+      font-size: 2rem;
+    }
+    .footer-links a {
+      color: #cfbeaf;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .footer-sosmed i {
+      font-size: 1.8rem;
+      margin-right: 18px;
+      color: #d1b9a5;
+    }
+    .copyright {
+      text-align: center;
+      border-top: 1px solid #4d382a;
+      padding-top: 24px;
+      font-size: 0.9rem;
+      color: #a79284;
+    }
+
+    /* responsive */
+    @media (max-width: 680px) {
+      .header-flex {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hero-text h2 {
+        font-size: 2.2rem;
+      }
+      .cta-box {
+        flex-direction: column;
+        text-align: center;
+      }
+      .wa-header {
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container header-flex">
+    <div class="logo">
+      <h1>Ummi Aqiqah</h1>
+      <span>Sejak 2017 · Amanah & Syar'i</span>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Beranda</a>
+      <a href="#paket">Paket</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+    <a href="https://wa.me/6281234567890?text=Assalamualaikum%20Ummi%20Aqiqah%2C%20saya%20ingin%20tanya%20paket%20aqiqah" class="wa-header" target="_blank">
+      <i class="fab fa-whatsapp"></i> 0812-3456-7890
+    </a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero / Home -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="hero-badge"><i class="fas fa-star" style="margin-right: 6px;"></i> Terpercaya 1000+ Keluarga</span>
+        <h2>Aqiqah <span class="hero-highlight">Berkah & Praktis</span> untuk Buah Hati Tercinta</h2>
+        <p class="hero-desc">Ummi Aqiqah hadir dengan kambing terbaik, masak siap saji, dan pengiriman tepat waktu. InsyaAllah sesuai sunnah.</p>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-number">8+</span><span class="stat-label">Tahun pengalaman</span></div>
+          <div class="stat-item"><span class="stat-number">3.200+</span><span class="stat-label">Aqiqah terselenggara</span></div>
+        </div>
+        <a href="#paket" class="btn-primary"><i class="fas fa-gift"></i> Lihat Paket Aqiqah</a>
+        <a href="https://wa.me/6281234567890?text=Assalamualaikum%2C%20mau%20tanya%20aqiqah%20Ummi" style="margin-left: 16px; color:#5e3c24; font-weight:500;"><i class="fab fa-whatsapp"></i> Tanya via WA</a>
+      </div>
+      <div class="hero-image">
+        <!-- ilustrasi: gambar kambing + nasi kebuli (pakai placeholder gambar lokal) -->
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Ccircle cx='200' cy='180' r='110' fill='%23F9E4D4'/%3E%3Ccircle cx='140' cy='150' r='30' fill='%23D9B8A4'/%3E%3Ccircle cx='260' cy='150' r='30' fill='%23D9B8A4'/%3E%3Cpath d='M160 240 Q200 280 240 240' stroke='%23775544' stroke-width='6' fill='none'/%3E%3Ctext x='135' y='290' font-family='Poppins' font-size='28' fill='%23855c3c' font-weight='bold'%3E🐐 Kambing%3C/text%3E%3Ctext x='155' y='330' font-size='24' fill='%23b87e5a'%3E🍚 Nasi Kebuli%3C/text%3E%3C/svg%3E"
+             alt="Ilustrasi Aqiqah Ummi" style="max-width:100%;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Paket Aqiqah -->
+  <section id="paket">
+    <div class="container">
+      <div class="section-title">
+        <h3>Pilihan Paket Aqiqah</h3>
+        <p class="section-sub">Harga terjangkau, sudah termasuk masak & pengiriman</p>
+      </div>
+      <div class="paket-grid">
+        <!-- Paket 1 -->
+        <div class="paket-card">
+          <div class="paket-icon"><i class="fas fa-utensils"></i></div>
+          <h4>Paket A</h4>
+          <div class="paket-harga">Rp 1.650k <small>/ kambing</small></div>
+          <ul class="fitur-list">
+            <li><i class="fas fa-check-circle"></i> 1 ekor kambing jantan</li>
+            <li><i class="fas fa-check-circle"></i> Masak gulai &amp; sate</li>
+            <li><i class="fas fa-check-circle"></i> Nasi kebuli 40 porsi</li>
+            <li><i class="fas fa-check-circle"></i> Sambal &amp; acar</li>
+            <li><i class="fas fa-check-circle"></i> Gratis antar (radius 15 km)</li>
+          </ul>
+          <a href="https://wa.me/6281234567890?text=Saya%20mau%20pesan%20Paket%20A%20Ummi%20Aqiqah" class="btn-paket">Pilih Paket A</a>
+        </div>
+        <!-- Paket 2 -->
+        <div class="paket-card">
+          <div class="paket-icon"><i class="fas fa-star"></i></div>
+          <h4>Paket B</h4>
+          <div class="paket-harga">Rp 2.250k <small>/ kambing</small></div>
+          <ul class="fitur-list">
+            <li><i class="fas fa-check-circle"></i> 1 ekor kambing premium</li>
+            <li><i class="fas fa-check-circle"></i> Olahan gulai, sate, tongseng</li>
+            <li><i class="fas fa-check-circle"></i> Nasi kebuli 60 porsi</li>
+            <li><i class="fas fa-check-circle"></i> Buah &amp; kue tradisional</li>
+            <li><i class="fas fa-check-circle"></i> Gratis antar &amp; kartu ucapan</li>
+          </ul>
+          <a href="https://wa.me/6281234567890?text=Saya%20mau%20pesan%20Paket%20B%20Ummi%20Aqiqah" class="btn-paket">Pilih Paket B</a>
+        </div>
+        <!-- Paket 3 -->
+        <div class="paket-card">
+          <div class="paket-icon"><i class="fas fa-crown"></i></div>
+          <h4>Paket Platinum</h4>
+          <div class="paket-harga">Rp 3.450k <small>/ 2 kambing</small></div>
+          <ul class="fitur-list">
+            <li><i class="fas fa-check-circle"></i> 2 ekor kambing pilihan</li>
+            <li><i class="fas fa-check-circle"></i> Menu lengkap: gulai, sate, kari</li>
+            <li><i class="fas fa-check-circle"></i> Nasi kebuli 120 porsi</li>
+            <li><i class="fas fa-check-circle"></i> Dessert &amp; minuman herbal</li>
+            <li><i class="fas fa-check-circle"></i> Dokumentasi &amp; dekor sederhana</li>
+          </ul>
+          <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20Paket%20Platinum%20Ummi%20Aqiqah" class="btn-paket">Konsultasi Platinum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keunggulan -->
+  <section id="keunggulan" style="background: #fcf7f2;">
+    <div class="container">
+      <div class="section-title">
+        <h3>Mengapa Ummi Aqiqah?</h3>
+        <p class="section-sub">Kami jaga setiap proses dengan standar terbaik</p>
+      </div>
+      <div class="keunggulan-grid">
+        <div class="unggul-item">
+          <i class="fas fa-check-double"></i>
+          <h5>Kambing Sehat</h5>
+          <p>Kambing cukup umur, tidak cacat, sesuai syariat.</p>
+        </div>
+        <div class="unggul-item">
+          <i class="fas fa-mosque"></i>
+          <h5>Proses Syar'i</h5>
+          <p>Penyembelihan oleh jagal berpengalaman, doa aqiqah.</p>
+        </div>
+        <div class="unggul-item">
+          <i class="fas fa-truck"></i>
+          <h5>Antar Tepat Waktu</h5>
+          <p>Armada bersih & berpendingin. Gratis ongkir area Jabodetabek.</p>
+        </div>
+        <div class="unggul-item">
+          <i class="fas fa-heart"></i>
+          <h5>Masak Higienis</h5>
+          <p>Dapur bersertifikat halal, rasa otentik & lezat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri singkat + testimoni mini -->
+  <section>
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+        <div style="flex: 2; min-width: 240px;">
+          <h3 style="font-size: 1.9rem; margin-bottom: 20px; color:#3f2c1e;">Hasil Olahan Terbaik</h3>
+          <p style="margin-bottom: 28px;">Kami sajikan nasi kebuli harum, gulai kambing empuk, dan sate bumbu kacang khas. Setiap pesanan dijamin fresh dan hangat.</p>
+          <div class="galeri-preview">
+            <div class="galeri-item"><i class="fas fa-drumstick-bite"></i><span>Gulai</span></div>
+            <div class="galeri-item"><i class="fas fa-egg"></i><span>Sate</span></div>
+            <div class="galeri-item"><i class="fas fa-bowl-food"></i><span>Kebuli</span></div>
+            <div class="galeri-item"><i class="fas fa-cake"></i><span>Hantaran</span></div>
+          </div>
+        </div>
+        <div style="flex:1; background:#fff7ef; border-radius: 32px; padding: 28px 26px;">
+          <i class="fas fa-quote-right" style="color: #c89b7a; font-size: 2rem; opacity: 0.5;"></i>
+          <p style="font-style: italic; margin: 15px 0;">"Alhamdulillah puas banget pakai Ummi Aqiqah. Masakannya enak, porsi banyak, dan pelayanan ramah. InsyaAllah langganan."</p>
+          <p><strong>— Bpk. Ahmad, Bekasi</strong></p>
+          <div style="margin-top: 24px;">
+            <span style="color: #f4b740;">★★★★★</span> 5.0 (140+ ulasan)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Kontak -->
+  <section id="kontak">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-left">
+          <h4>Konsultasi & Pemesanan<br>Langsung via WhatsApp</h4>
+          <p style="margin-top: 10px; opacity: 0.9;">Tim kami siap bantu pilih paket terbaik</p>
+        </div>
+        <a href="https://wa.me/6281234567890?text=Assalamualaikum%20Ummi%20Aqiqah%2C%20saya%20ingin%20tanya%20detail%20paket" class="wa-big" target="_blank">
+          <i class="fab fa-whatsapp"></i> 0812-3456-7890
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h2>Ummi Aqiqah</h2>
+        <p style="max-width: 260px;">Melayani aqiqah sesuai sunnah, praktis dan terpercaya sejak 2017.</p>
+      </div>
+      <div class="footer-links">
+        <p style="color: #e9d9cd; font-weight: 500;">Halaman</p>
+        <a href="#home">Beranda</a>
+        <a href="#paket">Paket</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+      <div>
+        <p style="color: #e9d9cd; font-weight: 500;">Alamat</p>
+        <p>Jl. Aqiqah Raya No. 23, Ciputat, Tangerang Selatan</p>
+        <p>📞 0812-3456-7890</p>
+      </div>
+      <div class="footer-sosmed">
+        <p style="color: #e9d9cd;">Ikuti kami</p>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 Ummi Aqiqah. Seluruh hak cipta. Berkah untuk keluarga.
+    </div>
+  </div>
+</footer>
+
+<!-- nomor WA default: ganti 6281234567890 dengan nomor asli toko -->
+</body>
+</html>
